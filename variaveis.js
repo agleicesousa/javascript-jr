@@ -52,3 +52,38 @@ var ultimoNome = "Sousa";    // Mantenha se quiser um valor fixo
 console.log(ultimoNome);
 ultimoNome = "Moretti";      // Alteração do valor da variável
 console.log(ultimoNome);     // O valor mudará para 'Moretti'
+
+
+//? ----------------------------------------------------------  TIPOS DE STRINGS  ------------------------------------------------------------
+
+//* TEXTOS
+// Ex
+let frase = "Olá JavaScript!"
+console.log(frase)
+
+
+//* NUMEROS
+// Ex¹ - Inteiros
+let dia = 9;
+console.log(dia)
+
+// Ex² - Pontos flutuantes / quebrados
+let pi = 3.14
+console.log(pi)
+
+
+//* BOLEANOS
+
+// Ex¹ - valor verdadeiro / true
+let sim = true
+console.log(sim)
+
+// Ex² - valor falso - false
+let nao = false
+console.log(nao) 
+
+
+//* UNDEFINED
+// Ex
+let nada;
+console.log(nada)
