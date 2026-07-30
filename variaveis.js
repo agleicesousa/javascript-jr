@@ -86,3 +86,17 @@ console.log(nao);
 // Ex - Uma variável criada, mas sem nenhum valor atribuído a ela
 let nada;
 console.log(nada);
+
+
+//? ----------------------------------------------------------  ??  ------------------------------------------------------------
+
+//* OPERADOR +
+// Ex¹
+let primeiroNome = "Maria";
+let segundoNome = "Antonieta";
+console.log(primeiroNome + " " + segundoNome);
+
+// Ex²
+let numeroUm = 33;
+let numeroDois = 34;
+console.log(numeroUm + numeroDois);
