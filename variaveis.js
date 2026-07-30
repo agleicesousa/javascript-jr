@@ -88,28 +88,30 @@ let nada;
 console.log(nada);
 
 
-//? ----------------------------------------------------------  ??  ------------------------------------------------------------
+//? ----------------------------------------------------------  CONCATENAÇÃO E ADIÇÃO  ------------------------------------------------------------
 
 //* OPERADOR +
-// Ex¹
+// Ex¹ - Concatenação (Juntando textos)
 let primeiroNome = "Maria";
 let segundoNome = "Antonieta";
-console.log(primeiroNome + " " + segundoNome);
+console.log(primeiroNome + " " + segundoNome); // O JS junta os textos
 
-// Ex²
+// Ex² - Adição Matemática (Somando números)
 let numeroUm = 33;
 let numeroDois = 34;
-console.log(numeroUm + numeroDois);
+console.log(numeroUm + numeroDois); // O JS soma os valores porque ambos são Numbers
 
 
-//* OPERADOR +=
+//* OPERADOR += (Atribuição com Concatenação)
+// Ele pega o valor que já existe na variável e "emenda" um novo valor no final.
 let texto = "Olá";
 texto += ", Usuário!";
 console.log(texto);
 
 
 //* MÉTODO concat()
+// Uma forma alternativa de juntar textos usando uma função específica para Strings.
 let palavraUm = "Deu";
 let palavraDois = "certo!";
-let fraseCompleta = palavraUm.concat(' ', palavraDois);
+let fraseCompleta = palavraUm.concat(' ', palavraDois); // O ' ' no meio adiciona o espaço
 console.log(fraseCompleta);
