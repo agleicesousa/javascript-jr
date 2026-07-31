@@ -116,3 +116,28 @@ let palavraUm = "Deu";
 let palavraDois = "certo!";
 let fraseCompleta = palavraUm.concat(' ', palavraDois); 
 console.log(fraseCompleta);
+
+
+//? ----------------------------------------------------------  OUTROS TIPOS DE DADOS  ------------------------------------------------------------
+
+//* OBJETOS (Objects)
+// Coleção de dados estruturados em pares de "chave: valor" (Não é um tipo primitivo)
+let pet = {
+  nome: 'Milly',
+  idade: 8,
+  tipo: 'gato'
+};
+console.log(pet);
+
+
+//* SYMBOL
+// Cria um valor identificador único e imutável (É primitivo)
+const chave1 = Symbol("a1234");
+const chave2 = Symbol("a1234");
+console.log(chave1 === chave2); // Retorna false, pois cada Symbol gerado é único, mesmo com descrições iguais.
+
+
+//* BIGINT (n)
+// Usado para números inteiros gigantes que ultrapassam o limite seguro do tipo Number (É primitivo)
+const numeroGrande = 1234567890123456789012345678901234567891234456789n;
+console.log(numeroGrande);
