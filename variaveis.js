@@ -2,29 +2,28 @@ console.log('Hello, World!');
 
 //* LET, CONST e VAR
 
-// let - É possível alterar no futuro. Respeita o escopo de bloco.
-
+// let - Mutável. Respeita escopo de bloco.
 // Ex¹
 let numero = 8;
 console.log(numero);
-numero = 25;    // Alteração do valor da variável
+numero = 25;    // Alteração de valor
 console.log(numero);
 
 // Ex²
 let nome = "Gleice";
 console.log(nome);
 nome = "Fátima";
-console.log(nome);   // Outra alteração de valor
+console.log(nome); 
 
 
-// const - Valor não mutável. Uma vez atribuído, não pode ser reatribuído.
-//! OBS: Para testar ambos os resultados descomente o exemplo que gostaria de usar removendo os '/*  */' correspondentes
+// const - Imutável. Não pode ser reatribuído.
+//! OBS: Descomente os blocos para testar os erros.
 
 /*
 // Ex¹
 const lugar = "Brasil";
 console.log(lugar);
-lugar = "Portugal";     // Vai dar erro no console: Assignment to constant variable.
+lugar = "Portugal";     // Erro de reatribuição
 console.log(lugar);
 */
 
@@ -32,60 +31,66 @@ console.log(lugar);
 // Ex²
 const saldo = 3.14;
 console.log(saldo);
-saldo = "9¾";           // Erro no console: Assignment to constant variable.
+saldo = "9.75";         // Erro de reatribuição
 console.log(saldo);
 */
 
 
-// var - Pode ser alterado, porém não é mais recomendado nas versões modernas do JavaScript (ES6+).
-// O 'var' não respeita escopo de bloco e pode causar comportamentos inesperados.
-
+// var - Mutável, mas não recomendado hoje em dia (foge do escopo de bloco).
 // Ex¹
-var nascimento = 1998;      // Mantenha se quiser um valor fixo
+var nascimento = 1998;      
 console.log(nascimento);
-nascimento = 2000;          // Alteração do valor da variável
-console.log(nascimento);    // O valor mudará para '2000'
-
+nascimento = 2000;          // Alteração de valor
+console.log(nascimento);    
 
 // EX²
-var ultimoNome = "Sousa";    // Mantenha se quiser um valor fixo
+var ultimoNome = "Sousa";    
 console.log(ultimoNome);
-ultimoNome = "Moretti";      // Alteração do valor da variável
-console.log(ultimoNome);     // O valor mudará para 'Moretti'
+ultimoNome = "Moretti";      
+console.log(ultimoNome);     
 
 
 //? ----------------------------------------------------------  TIPOS DE DADOS (PRIMITIVOS)  ------------------------------------------------------------
 
 //* STRINGS (Textos)
-// Ex
 let frase = "Olá JavaScript!";
 console.log(frase);
-
 
 //* NUMBERS (Números)
 // Ex¹ - Inteiros
 let dia = 9;
 console.log(dia);
 
-// Ex² - Pontos flutuantes / quebrados (Decimais)
+// Ex² - Decimais
 let pi = 3.14;
 console.log(pi);
 
-
 //* BOOLEANS (Booleanos)
-// Ex¹ - valor verdadeiro / true
+// Ex¹ - Verdadeiro
 let sim = true;
 console.log(sim);
 
-// Ex² - valor falso / false
+// Ex² - Falso
 let nao = false;
 console.log(nao); 
 
-
 //* UNDEFINED (Indefinido)
-// Ex - Uma variável criada, mas sem nenhum valor atribuído a ela
+// Variável declarada, mas sem valor
 let nada;
 console.log(nada);
+
+//* typeof (Descobre o tipo de dado)
+// Ex¹
+let num = 42;
+console.log(typeof num); // Retorna "number"
+
+// Ex²
+let isUserLoggedIn = true; 
+console.log(typeof isUserLoggedIn); // Retorna "boolean"
+
+// Ex³
+let exampleVariable = null; 
+console.log(typeof exampleVariable); // Retorna "object" (Bug histórico do JS)
 
 
 //? ----------------------------------------------------------  CONCATENAÇÃO E ADIÇÃO  ------------------------------------------------------------
@@ -94,24 +99,20 @@ console.log(nada);
 // Ex¹ - Concatenação (Juntando textos)
 let primeiroNome = "Maria";
 let segundoNome = "Antonieta";
-console.log(primeiroNome + " " + segundoNome); // O JS junta os textos
+console.log(primeiroNome + " " + segundoNome); 
 
-// Ex² - Adição Matemática (Somando números)
+// Ex² - Adição Matemática
 let numeroUm = 33;
 let numeroDois = 34;
-console.log(numeroUm + numeroDois); // O JS soma os valores porque ambos são Numbers
-
+console.log(numeroUm + numeroDois); 
 
 //* OPERADOR += (Atribuição com Concatenação)
-// Ele pega o valor que já existe na variável e "emenda" um novo valor no final.
 let texto = "Olá";
 texto += ", Usuário!";
 console.log(texto);
 
-
 //* MÉTODO concat()
-// Uma forma alternativa de juntar textos usando uma função específica para Strings.
 let palavraUm = "Deu";
 let palavraDois = "certo!";
-let fraseCompleta = palavraUm.concat(' ', palavraDois); // O ' ' no meio adiciona o espaço
+let fraseCompleta = palavraUm.concat(' ', palavraDois); 
 console.log(fraseCompleta);
