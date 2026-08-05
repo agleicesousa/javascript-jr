@@ -67,8 +67,29 @@ console.log(output);
 let sentence = "JavaScript is awesome!";
 let position = sentence.indexOf("awesome!"); 
 console.log(position); // Retorna 14
+let nextPosition = longSentence.indexOf("JavaScript", 10);
 
 // Buscando a partir de uma posição específica (índice 10)
 let longSentence = "JavaScript is awesome, and JavaScript is powerful!";
-let nextPosition = longSentence.indexOf("JavaScript", 10);
 console.log(nextPosition); // Retorna 27
+
+//? ----------------------------------------------------------  CÓDIGOS ASCII E CARACTERES  ------------------------------------------------------------
+
+//* charCodeAt()
+// Descobre o número (código ASCII/Unicode) por trás de um caractere. O (0) é a posição na string.
+
+// Ex¹ - Letra "A" (maiúscula)
+let letter = "A";
+console.log(letter.charCodeAt(0)); // Retorna 65
+
+// Ex² - Símbolo "!"
+let symbol = "!";
+console.log(symbol.charCodeAt(0)); // Retorna 33
+
+
+//* String.fromCharCode()
+// Faz o caminho inverso: transforma um número no seu caractere correspondente.
+
+// Ex³ - Código 65
+let char = String.fromCharCode(65);
+console.log(char); // Retorna "A"
