@@ -63,15 +63,18 @@ console.log(output);
 
 //? ----------------------------------------------------------  BUSCANDO EM STRINGS (indexOf)  ------------------------------------------------------------
 
-//* indexOf() retorna a posição onde o texto começa. 
+// indexOf() retorna a posição onde o texto começa.
 let sentence = "JavaScript is awesome!";
-let position = sentence.indexOf("awesome!"); 
+let position = sentence.indexOf("awesome!");
+
 console.log(position); // Retorna 14
+
+// Buscando "JavaScript" a partir de uma posição específica (índice 10)
+let longSentence = "JavaScript is awesome, and JavaScript is powerful!";
 let nextPosition = longSentence.indexOf("JavaScript", 10);
 
-// Buscando a partir de uma posição específica (índice 10)
-let longSentence = "JavaScript is awesome, and JavaScript is powerful!";
 console.log(nextPosition); // Retorna 27
+
 
 //? ----------------------------------------------------------  CÓDIGOS ASCII E CARACTERES  ------------------------------------------------------------
 
@@ -83,7 +86,7 @@ let letter = "A";
 console.log(letter.charCodeAt(0)); // Retorna 65
 
 // Ex² - Símbolo "!"
-let symbol = "!";
+let symbol = "!";console.log("Hello, World!");
 console.log(symbol.charCodeAt(0)); // Retorna 33
 
 
