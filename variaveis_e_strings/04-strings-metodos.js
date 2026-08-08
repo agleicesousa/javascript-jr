@@ -50,3 +50,18 @@ console.log(texto.slice(5));    // Retorna "mundo!"
 let saudacao = "Olá, Mundo!";
 console.log(saudacao.toUpperCase()); // Retorna "OLÁ, MUNDO!"
 console.log(saudacao.toLowerCase()); // Retorna "olá, mundo!"
+
+//* trim()
+// Remove espaços em branco do início e do fim da string.
+let textoComEspacos = "   Olá, mundo!   ";
+console.log(textoComEspacos.trim()); // Retorna "Olá, mundo!"
+
+//* trimStart()
+// Remove espaços em branco do início da string.
+let textoComEspacoInicio = "   Olá, mundo!";
+console.log(textoComEspacoInicio.trimStart()); // Retorna "Olá, mundo!"
+
+//* trimEnd()
+// Remove espaços em branco do fim da string.
+let textoComEspacoFim = "Olá, mundo!   ";
+console.log(textoComEspacoFim.trimEnd()); // Retorna "Olá, mundo!"
