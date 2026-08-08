@@ -75,3 +75,14 @@ console.log(fraseSubstituida); // Retorna "O cachorro é bonito. O gato é fofo.
 // Substitui todas as ocorrências de uma substring por outra.
 let fraseSubstituidaTodas = fraseOriginal.replaceAll("gato", "cachorro");
 console.log(fraseSubstituidaTodas); // Retorna "O cachorro é bonito. O cachorro é fofo."
+
+//* repeat()
+// Repete a string um número específico de vezes.
+let textoRepetido = "ha! ";
+console.log(textoRepetido.repeat(3)); // Retorna "ha! ha! ha! " 
+
+//* split()
+// Divide a string em um array de substrings com base em um separador.
+let listaFrutas = "maçã,banana,cereja";
+let frutas = listaFrutas.split(",");
+console.log(frutas); // Retorna ["maçã", "banana", "cereja"]
