@@ -33,12 +33,12 @@ let num = 42;
 console.log(typeof num); // Retorna "number"
 
 // Ex²
-let isUserLoggedIn = true; 
-console.log(typeof isUserLoggedIn); // Retorna "boolean"
+let usuarioLogado = true; 
+console.log(typeof usuarioLogado); // Retorna "boolean"
 
 // Ex³
-let exampleVariable = null; 
-console.log(typeof exampleVariable); // Retorna "object" (Bug histórico do JS)
+let examploVariavel = null; 
+console.log(typeof examploVariavel); // Retorna "object" (Bug histórico do JS)
 
 //? ----------------------------------------------------------  OUTROS TIPOS DE DADOS  ------------------------------------------------------------
 
