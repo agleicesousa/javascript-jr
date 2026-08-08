@@ -29,3 +29,19 @@ console.log(simbolo.charCodeAt(0)); // Retorna 33
 // Ex³ - Código 65
 let caractere = String.fromCharCode(65);
 console.log(caractere); // Retorna "A"
+
+
+//? ----------------------------------------------------------  MÉTODOS DE STRING  ------------------------------------------------------------
+
+//* includes()
+// Verifica se uma string contém outra string. Retorna true ou false.
+let fraseRaposa = "A raposa marrom rápida pula sobre o cachorro preguiçoso.";
+console.log(fraseRaposa.includes("raposa")); // Retorna true
+console.log(fraseRaposa.includes("gato"));   // Retorna false
+
+//* slice()
+// Retorna uma parte da string, do índice inicial até o índice final (não inclusivo).
+let texto = "Olá, mundo!";
+console.log(texto.slice(0, 3)); // Retorna "Olá"
+console.log(texto.slice(5));    // Retorna "mundo!"
+
