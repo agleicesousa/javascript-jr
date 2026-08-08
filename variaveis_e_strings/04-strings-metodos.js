@@ -65,3 +65,13 @@ console.log(textoComEspacoInicio.trimStart()); // Retorna "Olá, mundo!"
 // Remove espaços em branco do fim da string.
 let textoComEspacoFim = "Olá, mundo!   ";
 console.log(textoComEspacoFim.trimEnd()); // Retorna "Olá, mundo!"
+
+//* replace() e replaceAll()
+// Substitui a primeira ocorrência de uma substring por outra.
+let fraseOriginal = "O gato é bonito. O gato é fofo.";
+let fraseSubstituida = fraseOriginal.replace("gato", "cachorro");
+console.log(fraseSubstituida); // Retorna "O cachorro é bonito. O gato é fofo."
+
+// Substitui todas as ocorrências de uma substring por outra.
+let fraseSubstituidaTodas = fraseOriginal.replaceAll("gato", "cachorro");
+console.log(fraseSubstituidaTodas); // Retorna "O cachorro é bonito. O cachorro é fofo."
