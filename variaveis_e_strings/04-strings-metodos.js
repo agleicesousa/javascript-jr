@@ -45,3 +45,8 @@ let texto = "Olá, mundo!";
 console.log(texto.slice(0, 3)); // Retorna "Olá"
 console.log(texto.slice(5));    // Retorna "mundo!"
 
+//* toUpperCase() e toLowerCase()
+// Converte a string para maiúsculas ou minúsculas.
+let saudacao = "Olá, Mundo!";
+console.log(saudacao.toUpperCase()); // Retorna "OLÁ, MUNDO!"
+console.log(saudacao.toLowerCase()); // Retorna "olá, mundo!"
